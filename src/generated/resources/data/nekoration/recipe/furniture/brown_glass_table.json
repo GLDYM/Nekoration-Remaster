@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "#G#",
+    "# #",
+    "# #"
+  ],
+  "result": {
+    "count": 4,
+    "id": "nekoration:brown_glass_table"
+  }
+}

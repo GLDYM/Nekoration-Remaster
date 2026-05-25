@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "nekoration:oak_chair",
+    "nekoration:spruce_chair",
+    "nekoration:birch_chair",
+    "nekoration:jungle_chair",
+    "nekoration:acacia_chair",
+    "nekoration:dark_oak_chair",
+    "nekoration:crimson_chair",
+    "nekoration:warped_chair",
+    "nekoration:mangrove_chair",
+    "nekoration:pumpkin_chair"
+  ]
+}

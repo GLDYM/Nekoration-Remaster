@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "#SS",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "nekoration:brown_arm_chair"
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "variants": {
+    "color=0,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=0,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=0,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=0,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=1,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=1,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=1,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=1,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=10,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=10,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=10,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=10,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=11,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=11,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=11,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=11,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=12,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=12,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=12,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=12,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=13,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=13,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=13,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=13,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=14,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=14,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=14,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=14,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=15,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=15,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=15,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=15,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=2,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=2,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=2,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=2,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=3,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=3,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=3,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=3,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=4,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=4,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=4,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=4,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=5,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=5,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=5,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=5,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=6,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=6,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=6,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=6,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=7,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=7,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=7,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=7,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=8,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=8,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=8,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=8,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    },
+    "color=9,facing=east": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 90
+    },
+    "color=9,facing=north": {
+      "model": "nekoration:block/furniture/arm_chair"
+    },
+    "color=9,facing=south": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 180
+    },
+    "color=9,facing=west": {
+      "model": "nekoration:block/furniture/arm_chair",
+      "y": 270
+    }
+  }
+}

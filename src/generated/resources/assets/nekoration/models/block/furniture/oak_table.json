@@ -1,0 +1,8 @@
+{
+  "parent": "nekoration:block/furniture/table_base",
+  "textures": {
+    "0": "nekoration:block/furniture/oak_side",
+    "1": "nekoration:block/furniture/oak_top",
+    "particle": "nekoration:block/furniture/oak_side"
+  }
+}

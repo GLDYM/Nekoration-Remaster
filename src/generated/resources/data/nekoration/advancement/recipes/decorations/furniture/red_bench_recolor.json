@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_furniture": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#nekoration:furniture/benches"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nekoration:furniture/red_bench_recolor"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_furniture"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nekoration:furniture/red_bench_recolor"
+    ]
+  }
+}

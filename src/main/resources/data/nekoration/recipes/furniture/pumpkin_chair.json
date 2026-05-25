@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:pumpkin"
+    }
+  },
+  "result": {
+    "item": "nekoration:pumpkin_chair",
+    "count": 4
+  }
+}

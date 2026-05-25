@@ -1,0 +1,8 @@
+{
+  "parent": "nekoration:block/furniture/table_base",
+  "textures": {
+    "0": "nekoration:block/furniture/jungle_side",
+    "1": "nekoration:block/furniture/jungle_top",
+    "particle": "nekoration:block/furniture/jungle_side"
+  }
+}
