@@ -98,6 +98,63 @@ public final class NekorationItemTagsProvider extends ItemTagsProvider {
                 BlockItemRegistry.WHITE_BENCH.get(),
                 BlockItemRegistry.YELLOW_BENCH.get()
             );
+        tag(NekorationItemTags.DRAWERS)
+            .add(
+                BlockItemRegistry.BLACK_DRAWER.get(),
+                BlockItemRegistry.BLUE_DRAWER.get(),
+                BlockItemRegistry.BROWN_DRAWER.get(),
+                BlockItemRegistry.CYAN_DRAWER.get(),
+                BlockItemRegistry.GRAY_DRAWER.get(),
+                BlockItemRegistry.GREEN_DRAWER.get(),
+                BlockItemRegistry.LIGHT_BLUE_DRAWER.get(),
+                BlockItemRegistry.LIGHT_GRAY_DRAWER.get(),
+                BlockItemRegistry.LIME_DRAWER.get(),
+                BlockItemRegistry.MAGENTA_DRAWER.get(),
+                BlockItemRegistry.ORANGE_DRAWER.get(),
+                BlockItemRegistry.PINK_DRAWER.get(),
+                BlockItemRegistry.PURPLE_DRAWER.get(),
+                BlockItemRegistry.RED_DRAWER.get(),
+                BlockItemRegistry.WHITE_DRAWER.get(),
+                BlockItemRegistry.YELLOW_DRAWER.get()
+            );
+        tag(NekorationItemTags.CABINETS)
+            .add(
+                BlockItemRegistry.BLACK_CABINET.get(),
+                BlockItemRegistry.BLUE_CABINET.get(),
+                BlockItemRegistry.BROWN_CABINET.get(),
+                BlockItemRegistry.CYAN_CABINET.get(),
+                BlockItemRegistry.GRAY_CABINET.get(),
+                BlockItemRegistry.GREEN_CABINET.get(),
+                BlockItemRegistry.LIGHT_BLUE_CABINET.get(),
+                BlockItemRegistry.LIGHT_GRAY_CABINET.get(),
+                BlockItemRegistry.LIME_CABINET.get(),
+                BlockItemRegistry.MAGENTA_CABINET.get(),
+                BlockItemRegistry.ORANGE_CABINET.get(),
+                BlockItemRegistry.PINK_CABINET.get(),
+                BlockItemRegistry.PURPLE_CABINET.get(),
+                BlockItemRegistry.RED_CABINET.get(),
+                BlockItemRegistry.WHITE_CABINET.get(),
+                BlockItemRegistry.YELLOW_CABINET.get()
+            );
+        tag(NekorationItemTags.DRAWER_CHESTS)
+            .add(
+                BlockItemRegistry.BLACK_DRAWER_CHEST.get(),
+                BlockItemRegistry.BLUE_DRAWER_CHEST.get(),
+                BlockItemRegistry.BROWN_DRAWER_CHEST.get(),
+                BlockItemRegistry.CYAN_DRAWER_CHEST.get(),
+                BlockItemRegistry.GRAY_DRAWER_CHEST.get(),
+                BlockItemRegistry.GREEN_DRAWER_CHEST.get(),
+                BlockItemRegistry.LIGHT_BLUE_DRAWER_CHEST.get(),
+                BlockItemRegistry.LIGHT_GRAY_DRAWER_CHEST.get(),
+                BlockItemRegistry.LIME_DRAWER_CHEST.get(),
+                BlockItemRegistry.MAGENTA_DRAWER_CHEST.get(),
+                BlockItemRegistry.ORANGE_DRAWER_CHEST.get(),
+                BlockItemRegistry.PINK_DRAWER_CHEST.get(),
+                BlockItemRegistry.PURPLE_DRAWER_CHEST.get(),
+                BlockItemRegistry.RED_DRAWER_CHEST.get(),
+                BlockItemRegistry.WHITE_DRAWER_CHEST.get(),
+                BlockItemRegistry.YELLOW_DRAWER_CHEST.get()
+            );
         tag(NekorationItemTags.CUPBOARDS)
             .add(
                 BlockItemRegistry.BLACK_CUPBOARD.get(),

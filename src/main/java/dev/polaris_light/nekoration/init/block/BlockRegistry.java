@@ -8,6 +8,7 @@ import dev.polaris_light.nekoration.block.furniture.GlassRoundTableBlock;
 import dev.polaris_light.nekoration.block.furniture.GlassTableBlock;
 import dev.polaris_light.nekoration.block.furniture.RoundTableBlock;
 import dev.polaris_light.nekoration.block.furniture.TableBlock;
+import dev.polaris_light.nekoration.block.storage.CabinetBlock;
 import dev.polaris_light.nekoration.block.storage.CupboardBlock;
 import dev.polaris_light.nekoration.block.storage.ShelfBlock;
 import dev.polaris_light.nekoration.block.storage.WallShelfBlock;
@@ -53,6 +54,9 @@ public final class BlockRegistry {
     public static final DeferredBlock<GlassRoundTableBlock> GLASS_ROUND_TABLE = registerGlassRoundTable("glass_round_table");
     public static final DeferredBlock<ArmChairBlock> ARM_CHAIR = registerArmChair("arm_chair");
     public static final DeferredBlock<BenchBlock> BENCH = registerBench("bench");
+    public static final DeferredBlock<CabinetBlock> DRAWER = registerCabinet("drawer", CabinetBlock.CabinetType.DRAWER);
+    public static final DeferredBlock<CabinetBlock> CABINET = registerCabinet("cabinet", CabinetBlock.CabinetType.CABINET);
+    public static final DeferredBlock<CabinetBlock> DRAWER_CHEST = registerCabinet("drawer_chest", CabinetBlock.CabinetType.DRAWER_CHEST);
     public static final DeferredBlock<CupboardBlock> CUPBOARD = registerCupboard("cupboard", true);
     public static final DeferredBlock<ShelfBlock> SHELF = registerShelf("shelf");
     public static final DeferredBlock<WallShelfBlock> WALL_SHELF = registerWallShelf("wall_shelf");
@@ -144,6 +148,20 @@ public final class BlockRegistry {
                     .strength(2.0F, 3.0F)
                     .sound(SoundType.WOOD)
                     .noOcclusion()
+            )
+        );
+    }
+
+    private static DeferredBlock<CabinetBlock> registerCabinet(String name, CabinetBlock.CabinetType type) {
+        return BLOCKS.register(
+            name,
+            () -> new CabinetBlock(
+                BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.WOOD)
+                    .strength(2.0F, 3.0F)
+                    .sound(SoundType.WOOD)
+                    .noOcclusion(),
+                type
             )
         );
     }

@@ -46,6 +46,9 @@ public final class NekorationItemModelProvider extends ItemModelProvider {
         coloredFurniture("glass_round_table", "glass_round_table");
         coloredFurniture("arm_chair", "arm_chair");
         coloredBench();
+        coloredStorage("drawer", "drawer");
+        coloredStorage("cabinet", "cabinet");
+        coloredStorage("drawer_chest", "drawer_chest");
         coloredStorage("cupboard", "cupboard");
         coloredStorage("shelf", "shelf");
         coloredStorage("wall_shelf", "wall_shelf_s0");

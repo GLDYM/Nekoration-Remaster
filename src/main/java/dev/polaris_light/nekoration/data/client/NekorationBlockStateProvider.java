@@ -3,6 +3,7 @@ package dev.polaris_light.nekoration.data.client;
 import dev.polaris_light.nekoration.Nekoration;
 import dev.polaris_light.nekoration.api.block.HorizontalConnection;
 import dev.polaris_light.nekoration.api.block.NekorationBlockStateProperties;
+import dev.polaris_light.nekoration.block.storage.CabinetBlock;
 import dev.polaris_light.nekoration.block.storage.CupboardBlock;
 import dev.polaris_light.nekoration.block.storage.ShelfBlock;
 import dev.polaris_light.nekoration.init.block.BlockRegistry;
@@ -55,6 +56,9 @@ public final class NekorationBlockStateProvider extends BlockStateProvider {
         glassTable(BlockRegistry.GLASS_ROUND_TABLE.get(), "glass_round_table");
         chair(BlockRegistry.ARM_CHAIR.get(), "arm_chair", "arm_side", "arm_top");
         bench(BlockRegistry.BENCH.get());
+        cabinet(BlockRegistry.DRAWER.get(), "drawer");
+        cabinet(BlockRegistry.CABINET.get(), "cabinet");
+        cabinet(BlockRegistry.DRAWER_CHEST.get(), "drawer_chest");
         cupboard(BlockRegistry.CUPBOARD.get());
         shelf(BlockRegistry.SHELF.get());
         wallShelf(BlockRegistry.WALL_SHELF.get());
@@ -119,6 +123,22 @@ public final class NekorationBlockStateProvider extends BlockStateProvider {
                 case T1 -> t1;
                 case D1, T2 -> t2;
             };
+            return ConfiguredModel.builder().modelFile(model).rotationY(y).build();
+        });
+    }
+
+    private void cabinet(Block block, String name) {
+        ModelFile closed = models().getExistingFile(modLoc("block/storage/" + name));
+        ModelFile open = models().getExistingFile(modLoc("block/storage/" + name + "_open"));
+
+        getVariantBuilder(block).forAllStates(state -> {
+            int y = switch (state.getValue(HorizontalDirectionalBlock.FACING)) {
+                case EAST -> 90;
+                case SOUTH -> 180;
+                case WEST -> 270;
+                default -> 0;
+            };
+            ModelFile model = state.getValue(CabinetBlock.OPEN) ? open : closed;
             return ConfiguredModel.builder().modelFile(model).rotationY(y).build();
         });
     }

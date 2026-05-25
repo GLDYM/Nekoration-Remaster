@@ -61,17 +61,23 @@ public final class NekorationRecipeProvider extends RecipeProvider {
         makeGlassRoundTable(output, ItemTags.PLANKS, BlockItemRegistry.BROWN_GLASS_ROUND_TABLE.get(), "brown_glass_round_table");
         makeArmChair(output, ItemTags.PLANKS, Items.STICK, BlockItemRegistry.BROWN_ARM_CHAIR.get(), "brown_arm_chair");
         makeBench(output, ItemTags.PLANKS, Items.SPRUCE_SIGN, BlockItemRegistry.BROWN_BENCH.get(), "brown_bench");
-        makeCupboard(output, Items.OAK_PLANKS, Items.OAK_PRESSURE_PLATE, BlockItemRegistry.BROWN_CUPBOARD.get(), "cupboard");
-        makeShelf(output, Items.OAK_PLANKS, Items.OAK_PRESSURE_PLATE, BlockItemRegistry.BROWN_SHELF.get(), "shelf");
+        makeDrawer(output, ItemTags.PLANKS, Items.CHEST, BlockItemRegistry.BROWN_DRAWER.get(), "drawer");
+        makeCabinet(output, ItemTags.PLANKS, Items.CHEST, BlockItemRegistry.BROWN_CABINET.get(), "cabinet");
+        makeDrawerChest(output, ItemTags.PLANKS, Items.CHEST, BlockItemRegistry.BROWN_DRAWER_CHEST.get(), "drawer_chest");
+        makeCupboard(output, ItemTags.PLANKS, Items.OAK_PRESSURE_PLATE, BlockItemRegistry.BROWN_CUPBOARD.get(), "cupboard");
+        makeShelf(output, ItemTags.PLANKS, Items.OAK_PRESSURE_PLATE, BlockItemRegistry.BROWN_SHELF.get(), "shelf");
         makeWallShelf(output, Items.OAK_PRESSURE_PLATE, Items.STICK, BlockItemRegistry.BROWN_WALL_SHELF.get(), "wall_shelf");
         for (FurnitureColor color : FurnitureColor.values()) {
-            recolor(output, "glass_table", NekorationItemTags.GLASS_TABLES, color);
-            recolor(output, "glass_round_table", NekorationItemTags.GLASS_ROUND_TABLES, color);
-            recolor(output, "arm_chair", NekorationItemTags.ARM_CHAIRS, color);
-            recolor(output, "bench", NekorationItemTags.BENCHES, color);
-            recolor(output, "cupboard", NekorationItemTags.CUPBOARDS, color);
-            recolor(output, "shelf", NekorationItemTags.SHELVES, color);
-            recolor(output, "wall_shelf", NekorationItemTags.WALL_SHELVES, color);
+            recolorFurniture(output, "glass_table", NekorationItemTags.GLASS_TABLES, color);
+            recolorFurniture(output, "glass_round_table", NekorationItemTags.GLASS_ROUND_TABLES, color);
+            recolorFurniture(output, "arm_chair", NekorationItemTags.ARM_CHAIRS, color);
+            recolorFurniture(output, "bench", NekorationItemTags.BENCHES, color);
+            recolorStorage(output, "drawer", NekorationItemTags.DRAWERS, color);
+            recolorStorage(output, "cabinet", NekorationItemTags.CABINETS, color);
+            recolorStorage(output, "drawer_chest", NekorationItemTags.DRAWER_CHESTS, color);
+            recolorStorage(output, "cupboard", NekorationItemTags.CUPBOARDS, color);
+            recolorStorage(output, "shelf", NekorationItemTags.SHELVES, color);
+            recolorStorage(output, "wall_shelf", NekorationItemTags.WALL_SHELVES, color);
         }
     }
 
@@ -149,7 +155,40 @@ public final class NekorationRecipeProvider extends RecipeProvider {
             .save(output, ResourceLocation.fromNamespaceAndPath("nekoration", "furniture/" + name));
     }
 
-    private void makeCupboard(RecipeOutput output, ItemLike planks, ItemLike pressurePlate, ItemLike result, String name) {
+    private void makeDrawer(RecipeOutput output, TagKey<Item> planks, ItemLike chest, ItemLike result, String name) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, result)
+            .pattern("###")
+            .pattern("#C#")
+            .pattern("# #")
+            .define('#', planks)
+            .define('C', chest)
+            .unlockedBy("has_material", has(planks))
+            .save(output, ResourceLocation.fromNamespaceAndPath("nekoration", "storage/" + name));
+    }
+
+    private void makeCabinet(RecipeOutput output, TagKey<Item> planks, ItemLike chest, ItemLike result, String name) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, result)
+            .pattern("###")
+            .pattern("C#C")
+            .pattern("###")
+            .define('#', planks)
+            .define('C', chest)
+            .unlockedBy("has_material", has(planks))
+            .save(output, ResourceLocation.fromNamespaceAndPath("nekoration", "storage/" + name));
+    }
+
+    private void makeDrawerChest(RecipeOutput output, TagKey<Item> planks, ItemLike chest, ItemLike result, String name) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, result)
+            .pattern("###")
+            .pattern("#C#")
+            .pattern("#C#")
+            .define('#', planks)
+            .define('C', chest)
+            .unlockedBy("has_material", has(planks))
+            .save(output, ResourceLocation.fromNamespaceAndPath("nekoration", "storage/" + name));
+    }
+
+    private void makeCupboard(RecipeOutput output, TagKey<Item> planks, ItemLike pressurePlate, ItemLike result, String name) {
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, result)
             .pattern("###")
             .pattern("#P ")
@@ -160,7 +199,7 @@ public final class NekorationRecipeProvider extends RecipeProvider {
             .save(output, ResourceLocation.fromNamespaceAndPath("nekoration", "storage/" + name));
     }
 
-    private void makeShelf(RecipeOutput output, ItemLike planks, ItemLike pressurePlate, ItemLike result, String name) {
+    private void makeShelf(RecipeOutput output, TagKey<Item> planks, ItemLike pressurePlate, ItemLike result, String name) {
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, result)
             .pattern("#P#")
             .pattern("###")
@@ -181,7 +220,7 @@ public final class NekorationRecipeProvider extends RecipeProvider {
             .save(output, ResourceLocation.fromNamespaceAndPath("nekoration", "storage/" + name));
     }
 
-    private void recolor(RecipeOutput output, String furnitureName, TagKey<Item> inputTag, FurnitureColor color) {
+    private void recolorFurniture(RecipeOutput output, String furnitureName, TagKey<Item> inputTag, FurnitureColor color) {
         ItemLike result = ColoredFurnitureItem.get(furnitureName, color).getItem();
         ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, result)
             .requires(inputTag)
@@ -192,6 +231,21 @@ public final class NekorationRecipeProvider extends RecipeProvider {
                 ResourceLocation.fromNamespaceAndPath(
                     "nekoration",
                     "furniture/" + color.serializedName() + "_" + furnitureName + "_recolor"
+                )
+            );
+    }
+
+    private void recolorStorage(RecipeOutput output, String storageName, TagKey<Item> inputTag, FurnitureColor color) {
+        ItemLike result = ColoredFurnitureItem.get(storageName, color).getItem();
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, result)
+            .requires(inputTag)
+            .requires(color.dye())
+            .unlockedBy("has_storage", has(inputTag))
+            .save(
+                output,
+                ResourceLocation.fromNamespaceAndPath(
+                    "nekoration",
+                    "storage/" + color.serializedName() + "_" + storageName + "_recolor"
                 )
             );
     }

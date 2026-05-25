@@ -1,6 +1,8 @@
 package dev.polaris_light.nekoration.init.block;
 
 import dev.polaris_light.nekoration.Nekoration;
+import dev.polaris_light.nekoration.block.entity.CabinetBlockEntity;
+import dev.polaris_light.nekoration.block.storage.CabinetBlock;
 import dev.polaris_light.nekoration.block.entity.DisplayShelfBlockEntity;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -24,6 +26,17 @@ public final class BlockEntityRegistry {
                 BlockRegistry.CUPBOARD.get(),
                 BlockRegistry.SHELF.get(),
                 BlockRegistry.WALL_SHELF.get()
+            ).build(null)
+        );
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CabinetBlockEntity>> CABINET =
+        BLOCK_ENTITIES.register(
+            "cabinet",
+            () -> BlockEntityType.Builder.of(
+                (pos, state) -> new CabinetBlockEntity(pos, state, ((CabinetBlock) state.getBlock()).type()),
+                BlockRegistry.DRAWER.get(),
+                BlockRegistry.CABINET.get(),
+                BlockRegistry.DRAWER_CHEST.get()
             ).build(null)
         );
 

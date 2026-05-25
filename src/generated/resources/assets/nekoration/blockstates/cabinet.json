@@ -1,0 +1,484 @@
+{
+  "variants": {
+    "color=0,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=0,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=0,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=0,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=0,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=0,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=0,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=0,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=1,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=1,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=1,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=1,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=1,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=1,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=1,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=1,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=10,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=10,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=10,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=10,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=10,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=10,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=10,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=10,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=11,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=11,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=11,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=11,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=11,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=11,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=11,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=11,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=12,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=12,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=12,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=12,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=12,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=12,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=12,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=12,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=13,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=13,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=13,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=13,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=13,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=13,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=13,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=13,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=14,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=14,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=14,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=14,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=14,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=14,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=14,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=14,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=15,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=15,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=15,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=15,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=15,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=15,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=15,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=15,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=2,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=2,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=2,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=2,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=2,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=2,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=2,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=2,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=3,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=3,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=3,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=3,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=3,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=3,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=3,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=3,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=4,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=4,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=4,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=4,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=4,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=4,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=4,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=4,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=5,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=5,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=5,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=5,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=5,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=5,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=5,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=5,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=6,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=6,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=6,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=6,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=6,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=6,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=6,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=6,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=7,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=7,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=7,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=7,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=7,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=7,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=7,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=7,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=8,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=8,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=8,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=8,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=8,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=8,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=8,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=8,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    },
+    "color=9,facing=east,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 90
+    },
+    "color=9,facing=east,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 90
+    },
+    "color=9,facing=north,open=false": {
+      "model": "nekoration:block/storage/cabinet"
+    },
+    "color=9,facing=north,open=true": {
+      "model": "nekoration:block/storage/cabinet_open"
+    },
+    "color=9,facing=south,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 180
+    },
+    "color=9,facing=south,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 180
+    },
+    "color=9,facing=west,open=false": {
+      "model": "nekoration:block/storage/cabinet",
+      "y": 270
+    },
+    "color=9,facing=west,open=true": {
+      "model": "nekoration:block/storage/cabinet_open",
+      "y": 270
+    }
+  }
+}
