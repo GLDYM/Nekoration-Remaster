@@ -54,7 +54,10 @@ public final class NekorationBlockTagsProvider extends BlockTagsProvider {
                 BlockRegistry.GLASS_TABLE.get(),
                 BlockRegistry.GLASS_ROUND_TABLE.get(),
                 BlockRegistry.ARM_CHAIR.get(),
-                BlockRegistry.BENCH.get()
+                BlockRegistry.BENCH.get(),
+                BlockRegistry.CUPBOARD.get(),
+                BlockRegistry.SHELF.get(),
+                BlockRegistry.WALL_SHELF.get()
             );
     }
 }

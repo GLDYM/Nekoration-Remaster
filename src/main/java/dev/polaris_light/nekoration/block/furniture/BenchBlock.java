@@ -28,7 +28,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class BenchBlock extends DyeableHorizontalConnectBlock implements SeatBlock {
     public static final MapCodec<BenchBlock> CODEC = simpleCodec(BenchBlock::new);
 
-    private static final double SEAT_Y_OFFSET = 0.3125D;
+    private static final double SEAT_Y_OFFSET = 0.5D;
     private static final Map<HorizontalConnection, VoxelShape> NORTH_SHAPES = createNorthShapes();
 
     public BenchBlock(Properties properties) {

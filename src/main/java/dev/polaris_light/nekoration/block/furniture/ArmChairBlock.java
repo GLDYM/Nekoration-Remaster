@@ -27,7 +27,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class ArmChairBlock extends DyeableHorizontalBlock implements SeatBlock {
     public static final MapCodec<ArmChairBlock> CODEC = simpleCodec(ArmChairBlock::new);
 
-    private static final double SEAT_Y_OFFSET = 0.25D;
+    private static final double SEAT_Y_OFFSET = 0.5D;
     private static final Map<Direction, VoxelShape> SHAPES = createShapes();
 
     public ArmChairBlock(Properties properties) {
@@ -41,7 +41,7 @@ public class ArmChairBlock extends DyeableHorizontalBlock implements SeatBlock {
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return SHAPES.get(state.getValue(HorizontalDirectionalBlock.FACING).getOpposite());
+        return SHAPES.get(state.getValue(HorizontalDirectionalBlock.FACING));
     }
 
     @Override
@@ -58,7 +58,7 @@ public class ArmChairBlock extends DyeableHorizontalBlock implements SeatBlock {
 
     private static Map<Direction, VoxelShape> createShapes() {
         Map<Direction, VoxelShape> shapes = new EnumMap<>(Direction.class);
-        VoxelShape south = Shapes.or(
+        VoxelShape north = Shapes.or(
             Block.box(1.0D, 6.0D, 1.0D, 15.0D, 8.0D, 14.0D),
             Block.box(0.9D, 5.9D, 13.0D, 3.0D, 23.0D, 15.0D),
             Block.box(13.0D, 5.9D, 13.0D, 15.1D, 23.0D, 15.0D),
@@ -74,10 +74,10 @@ public class ArmChairBlock extends DyeableHorizontalBlock implements SeatBlock {
             Block.box(1.0D, 0.0D, 1.0D, 3.0D, 2.0D, 15.0D),
             Block.box(13.0D, 0.0D, 1.0D, 15.0D, 2.0D, 15.0D)
         );
-        shapes.put(Direction.SOUTH, south);
-        shapes.put(Direction.WEST, rotateShapeY(south));
-        shapes.put(Direction.NORTH, rotateShapeY(shapes.get(Direction.WEST)));
-        shapes.put(Direction.EAST, rotateShapeY(shapes.get(Direction.NORTH)));
+        shapes.put(Direction.NORTH, north);
+        shapes.put(Direction.WEST, rotateShapeY(north));
+        shapes.put(Direction.SOUTH, rotateShapeY(shapes.get(Direction.WEST)));
+        shapes.put(Direction.EAST, rotateShapeY(shapes.get(Direction.SOUTH)));
         return shapes;
     }
 

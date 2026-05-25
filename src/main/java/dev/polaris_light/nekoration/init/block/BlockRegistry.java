@@ -8,6 +8,9 @@ import dev.polaris_light.nekoration.block.furniture.GlassRoundTableBlock;
 import dev.polaris_light.nekoration.block.furniture.GlassTableBlock;
 import dev.polaris_light.nekoration.block.furniture.RoundTableBlock;
 import dev.polaris_light.nekoration.block.furniture.TableBlock;
+import dev.polaris_light.nekoration.block.storage.CupboardBlock;
+import dev.polaris_light.nekoration.block.storage.ShelfBlock;
+import dev.polaris_light.nekoration.block.storage.WallShelfBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -50,6 +53,9 @@ public final class BlockRegistry {
     public static final DeferredBlock<GlassRoundTableBlock> GLASS_ROUND_TABLE = registerGlassRoundTable("glass_round_table");
     public static final DeferredBlock<ArmChairBlock> ARM_CHAIR = registerArmChair("arm_chair");
     public static final DeferredBlock<BenchBlock> BENCH = registerBench("bench");
+    public static final DeferredBlock<CupboardBlock> CUPBOARD = registerCupboard("cupboard", true);
+    public static final DeferredBlock<ShelfBlock> SHELF = registerShelf("shelf");
+    public static final DeferredBlock<WallShelfBlock> WALL_SHELF = registerWallShelf("wall_shelf");
 
     private static DeferredBlock<ChairBlock> registerChair(String name) {
         return BLOCKS.register(
@@ -133,6 +139,46 @@ public final class BlockRegistry {
         return BLOCKS.register(
             name,
             () -> new BenchBlock(
+                BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.WOOD)
+                    .strength(2.0F, 3.0F)
+                    .sound(SoundType.WOOD)
+                    .noOcclusion()
+            )
+        );
+    }
+
+    private static DeferredBlock<CupboardBlock> registerCupboard(String name, boolean playSound) {
+        return BLOCKS.register(
+            name,
+            () -> new CupboardBlock(
+                BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.WOOD)
+                    .strength(2.0F, 3.0F)
+                    .sound(SoundType.WOOD)
+                    .noOcclusion(),
+                playSound
+            )
+        );
+    }
+
+    private static DeferredBlock<ShelfBlock> registerShelf(String name) {
+        return BLOCKS.register(
+            name,
+            () -> new ShelfBlock(
+                BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.WOOD)
+                    .strength(2.0F, 3.0F)
+                    .sound(SoundType.WOOD)
+                    .noOcclusion()
+            )
+        );
+    }
+
+    private static DeferredBlock<WallShelfBlock> registerWallShelf(String name) {
+        return BLOCKS.register(
+            name,
+            () -> new WallShelfBlock(
                 BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
                     .strength(2.0F, 3.0F)

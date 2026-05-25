@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:oak_planks"
+    },
+    "P": {
+      "item": "minecraft:oak_pressure_plate"
+    }
+  },
+  "pattern": [
+    "#P#",
+    "###",
+    "# #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nekoration:brown_shelf"
+  }
+}

@@ -61,11 +61,17 @@ public final class NekorationRecipeProvider extends RecipeProvider {
         makeGlassRoundTable(output, ItemTags.PLANKS, BlockItemRegistry.BROWN_GLASS_ROUND_TABLE.get(), "brown_glass_round_table");
         makeArmChair(output, ItemTags.PLANKS, Items.STICK, BlockItemRegistry.BROWN_ARM_CHAIR.get(), "brown_arm_chair");
         makeBench(output, ItemTags.PLANKS, Items.SPRUCE_SIGN, BlockItemRegistry.BROWN_BENCH.get(), "brown_bench");
+        makeCupboard(output, Items.OAK_PLANKS, Items.OAK_PRESSURE_PLATE, BlockItemRegistry.BROWN_CUPBOARD.get(), "cupboard");
+        makeShelf(output, Items.OAK_PLANKS, Items.OAK_PRESSURE_PLATE, BlockItemRegistry.BROWN_SHELF.get(), "shelf");
+        makeWallShelf(output, Items.OAK_PRESSURE_PLATE, Items.STICK, BlockItemRegistry.BROWN_WALL_SHELF.get(), "wall_shelf");
         for (FurnitureColor color : FurnitureColor.values()) {
             recolor(output, "glass_table", NekorationItemTags.GLASS_TABLES, color);
             recolor(output, "glass_round_table", NekorationItemTags.GLASS_ROUND_TABLES, color);
             recolor(output, "arm_chair", NekorationItemTags.ARM_CHAIRS, color);
             recolor(output, "bench", NekorationItemTags.BENCHES, color);
+            recolor(output, "cupboard", NekorationItemTags.CUPBOARDS, color);
+            recolor(output, "shelf", NekorationItemTags.SHELVES, color);
+            recolor(output, "wall_shelf", NekorationItemTags.WALL_SHELVES, color);
         }
     }
 
@@ -141,6 +147,38 @@ public final class NekorationRecipeProvider extends RecipeProvider {
             .define('S', sign)
             .unlockedBy("has_material", has(material))
             .save(output, ResourceLocation.fromNamespaceAndPath("nekoration", "furniture/" + name));
+    }
+
+    private void makeCupboard(RecipeOutput output, ItemLike planks, ItemLike pressurePlate, ItemLike result, String name) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, result)
+            .pattern("###")
+            .pattern("#P ")
+            .pattern("###")
+            .define('#', planks)
+            .define('P', pressurePlate)
+            .unlockedBy("has_material", has(planks))
+            .save(output, ResourceLocation.fromNamespaceAndPath("nekoration", "storage/" + name));
+    }
+
+    private void makeShelf(RecipeOutput output, ItemLike planks, ItemLike pressurePlate, ItemLike result, String name) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, result)
+            .pattern("#P#")
+            .pattern("###")
+            .pattern("# #")
+            .define('#', planks)
+            .define('P', pressurePlate)
+            .unlockedBy("has_material", has(planks))
+            .save(output, ResourceLocation.fromNamespaceAndPath("nekoration", "storage/" + name));
+    }
+
+    private void makeWallShelf(RecipeOutput output, ItemLike pressurePlate, ItemLike stick, ItemLike result, String name) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, result)
+            .pattern("PP")
+            .pattern("S ")
+            .define('P', pressurePlate)
+            .define('S', stick)
+            .unlockedBy("has_material", has(pressurePlate))
+            .save(output, ResourceLocation.fromNamespaceAndPath("nekoration", "storage/" + name));
     }
 
     private void recolor(RecipeOutput output, String furnitureName, TagKey<Item> inputTag, FurnitureColor color) {

@@ -25,7 +25,7 @@ public class ChairBlock extends HorizontalDirectionalBlock implements SeatBlock 
     private static final double SEAT_HEIGHT = 9.0D;
     private static final double BACKREST_HEIGHT = 24.0D;
     private static final double BACKREST_THICKNESS = 3.0D;
-    private static final double SEAT_Y_OFFSET = (SEAT_HEIGHT + 1.0D) / 16.0D;
+    private static final double SEAT_Y_OFFSET = (SEAT_HEIGHT + 0.0D) / 16.0D;
 
     private static final VoxelShape SEAT_SHAPE = Block.box(
         SIDE_SPACE, 0.0D, SIDE_SPACE, 16.0D - SIDE_SPACE, SEAT_HEIGHT, 16.0D - SIDE_SPACE

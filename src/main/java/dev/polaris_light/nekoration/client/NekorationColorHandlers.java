@@ -6,6 +6,7 @@ import dev.polaris_light.nekoration.api.item.DyeableBlockItem;
 import dev.polaris_light.nekoration.init.block.BlockRegistry;
 import dev.polaris_light.nekoration.init.item.ColoredFurnitureItem;
 import dev.polaris_light.nekoration.item.FurnitureColor;
+import net.minecraft.world.item.Item;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -23,7 +24,10 @@ public final class NekorationColorHandlers {
             BlockRegistry.GLASS_TABLE.get(),
             BlockRegistry.GLASS_ROUND_TABLE.get(),
             BlockRegistry.ARM_CHAIR.get(),
-            BlockRegistry.BENCH.get()
+            BlockRegistry.BENCH.get(),
+            BlockRegistry.CUPBOARD.get(),
+            BlockRegistry.SHELF.get(),
+            BlockRegistry.WALL_SHELF.get()
         );
     }
 
@@ -33,8 +37,12 @@ public final class NekorationColorHandlers {
             (stack, tintIndex) -> tintIndex >= 0 && stack.getItem() instanceof DyeableBlockItem furnitureBlockItem
                 ? furnitureBlockItem.color().color()
                 : -1,
-            ColoredFurnitureItem.getItems()
+            appendDisplayShelfItems()
         );
+    }
+
+    private static Item[] appendDisplayShelfItems() {
+        return ColoredFurnitureItem.getItems();
     }
 
     private static int colorFromId(int colorId) {

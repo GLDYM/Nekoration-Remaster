@@ -32,6 +32,9 @@
   "block.nekoration.glass_round_table": "玻璃圆桌",
   "block.nekoration.arm_chair": "扶手椅",
   "block.nekoration.bench": "长椅",
+  "block.nekoration.cupboard": "橱柜",
+  "block.nekoration.shelf": "展架",
+  "block.nekoration.wall_shelf": "壁挂架",
   "entity.nekoration.seat": "座位",
   "itemGroup.nekoration.furniture": "Nekoration | 家具"
 }

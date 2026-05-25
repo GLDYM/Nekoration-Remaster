@@ -46,6 +46,9 @@ public final class NekorationItemModelProvider extends ItemModelProvider {
         coloredFurniture("glass_round_table", "glass_round_table");
         coloredFurniture("arm_chair", "arm_chair");
         coloredBench();
+        coloredStorage("cupboard", "cupboard");
+        coloredStorage("shelf", "shelf");
+        coloredStorage("wall_shelf", "wall_shelf_s0");
     }
 
     private void furniture(String name) {
@@ -60,7 +63,13 @@ public final class NekorationItemModelProvider extends ItemModelProvider {
 
     private void coloredBench() {
         for (FurnitureColor color : FurnitureColor.values()) {
-            withExistingParent(color.serializedName() + "_bench", modLoc("block/bench_s0"));
+            withExistingParent(color.serializedName() + "_bench", modLoc("block/furniture/bench_s0"));
+        }
+    }
+
+    private void coloredStorage(String itemSuffix, String blockModelName) {
+        for (FurnitureColor color : FurnitureColor.values()) {
+            withExistingParent(color.serializedName() + "_" + itemSuffix, modLoc("block/storage/" + blockModelName));
         }
     }
 }

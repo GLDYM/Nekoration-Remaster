@@ -2,6 +2,7 @@ package dev.polaris_light.nekoration;
 
 import dev.polaris_light.nekoration.init.CreativeModeTabRegistry;
 import dev.polaris_light.nekoration.init.EntityTypeRegistry;
+import dev.polaris_light.nekoration.init.block.BlockEntityRegistry;
 import dev.polaris_light.nekoration.init.block.BlockRegistry;
 import dev.polaris_light.nekoration.init.item.BlockItemRegistry;
 import net.minecraft.world.item.Item;
@@ -15,6 +16,7 @@ public final class Nekoration {
 
     public Nekoration(IEventBus modEventBus, ModContainer modContainer) {
         BlockRegistry.BLOCKS.register(modEventBus);
+        BlockEntityRegistry.BLOCK_ENTITIES.register(modEventBus);
         BlockItemRegistry.ITEMS.register(modEventBus);
         EntityTypeRegistry.ENTITY_TYPES.register(modEventBus);
         CreativeModeTabRegistry.TABS.register(modEventBus);

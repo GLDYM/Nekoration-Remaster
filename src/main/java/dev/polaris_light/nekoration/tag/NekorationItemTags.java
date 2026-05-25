@@ -11,6 +11,9 @@ public final class NekorationItemTags {
     public static final TagKey<Item> GLASS_ROUND_TABLES = create("furniture/glass_round_tables");
     public static final TagKey<Item> ARM_CHAIRS = create("furniture/arm_chairs");
     public static final TagKey<Item> BENCHES = create("furniture/benches");
+    public static final TagKey<Item> CUPBOARDS = create("furniture/cupboards");
+    public static final TagKey<Item> SHELVES = create("furniture/shelves");
+    public static final TagKey<Item> WALL_SHELVES = create("furniture/wall_shelves");
 
     private NekorationItemTags() {
     }

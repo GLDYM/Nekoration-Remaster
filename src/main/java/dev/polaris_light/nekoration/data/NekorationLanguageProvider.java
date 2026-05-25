@@ -44,6 +44,9 @@ public final class NekorationLanguageProvider extends LanguageProvider {
         add("block.nekoration.glass_round_table", "Round Glass Table");
         add("block.nekoration.arm_chair", "Arm Chair");
         add("block.nekoration.bench", "Bench");
+        add("block.nekoration.cupboard", "Cupboard");
+        add("block.nekoration.shelf", "Shelf");
+        add("block.nekoration.wall_shelf", "Wall Shelf");
         add("entity.nekoration.seat", "Seat");
         add("itemGroup.nekoration.furniture", "Nekoration | Furniture");
     }

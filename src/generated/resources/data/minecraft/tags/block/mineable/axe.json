@@ -32,6 +32,9 @@
     "nekoration:glass_table",
     "nekoration:glass_round_table",
     "nekoration:arm_chair",
-    "nekoration:bench"
+    "nekoration:bench",
+    "nekoration:cupboard",
+    "nekoration:shelf",
+    "nekoration:wall_shelf"
   ]
 }

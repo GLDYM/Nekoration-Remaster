@@ -110,6 +110,57 @@ public final class BlockItemRegistry {
     public static final DeferredItem<Item> WHITE_BENCH = register(ColoredFurnitureItem.WHITE_BENCH);
     public static final DeferredItem<Item> YELLOW_BENCH = register(ColoredFurnitureItem.YELLOW_BENCH);
 
+    public static final DeferredItem<Item> BLACK_CUPBOARD = register(ColoredFurnitureItem.BLACK_CUPBOARD);
+    public static final DeferredItem<Item> BLUE_CUPBOARD = register(ColoredFurnitureItem.BLUE_CUPBOARD);
+    public static final DeferredItem<Item> BROWN_CUPBOARD = register(ColoredFurnitureItem.BROWN_CUPBOARD);
+    public static final DeferredItem<Item> CYAN_CUPBOARD = register(ColoredFurnitureItem.CYAN_CUPBOARD);
+    public static final DeferredItem<Item> GRAY_CUPBOARD = register(ColoredFurnitureItem.GRAY_CUPBOARD);
+    public static final DeferredItem<Item> GREEN_CUPBOARD = register(ColoredFurnitureItem.GREEN_CUPBOARD);
+    public static final DeferredItem<Item> LIGHT_BLUE_CUPBOARD = register(ColoredFurnitureItem.LIGHT_BLUE_CUPBOARD);
+    public static final DeferredItem<Item> LIGHT_GRAY_CUPBOARD = register(ColoredFurnitureItem.LIGHT_GRAY_CUPBOARD);
+    public static final DeferredItem<Item> LIME_CUPBOARD = register(ColoredFurnitureItem.LIME_CUPBOARD);
+    public static final DeferredItem<Item> MAGENTA_CUPBOARD = register(ColoredFurnitureItem.MAGENTA_CUPBOARD);
+    public static final DeferredItem<Item> ORANGE_CUPBOARD = register(ColoredFurnitureItem.ORANGE_CUPBOARD);
+    public static final DeferredItem<Item> PINK_CUPBOARD = register(ColoredFurnitureItem.PINK_CUPBOARD);
+    public static final DeferredItem<Item> PURPLE_CUPBOARD = register(ColoredFurnitureItem.PURPLE_CUPBOARD);
+    public static final DeferredItem<Item> RED_CUPBOARD = register(ColoredFurnitureItem.RED_CUPBOARD);
+    public static final DeferredItem<Item> WHITE_CUPBOARD = register(ColoredFurnitureItem.WHITE_CUPBOARD);
+    public static final DeferredItem<Item> YELLOW_CUPBOARD = register(ColoredFurnitureItem.YELLOW_CUPBOARD);
+
+    public static final DeferredItem<Item> BLACK_SHELF = register(ColoredFurnitureItem.BLACK_SHELF);
+    public static final DeferredItem<Item> BLUE_SHELF = register(ColoredFurnitureItem.BLUE_SHELF);
+    public static final DeferredItem<Item> BROWN_SHELF = register(ColoredFurnitureItem.BROWN_SHELF);
+    public static final DeferredItem<Item> CYAN_SHELF = register(ColoredFurnitureItem.CYAN_SHELF);
+    public static final DeferredItem<Item> GRAY_SHELF = register(ColoredFurnitureItem.GRAY_SHELF);
+    public static final DeferredItem<Item> GREEN_SHELF = register(ColoredFurnitureItem.GREEN_SHELF);
+    public static final DeferredItem<Item> LIGHT_BLUE_SHELF = register(ColoredFurnitureItem.LIGHT_BLUE_SHELF);
+    public static final DeferredItem<Item> LIGHT_GRAY_SHELF = register(ColoredFurnitureItem.LIGHT_GRAY_SHELF);
+    public static final DeferredItem<Item> LIME_SHELF = register(ColoredFurnitureItem.LIME_SHELF);
+    public static final DeferredItem<Item> MAGENTA_SHELF = register(ColoredFurnitureItem.MAGENTA_SHELF);
+    public static final DeferredItem<Item> ORANGE_SHELF = register(ColoredFurnitureItem.ORANGE_SHELF);
+    public static final DeferredItem<Item> PINK_SHELF = register(ColoredFurnitureItem.PINK_SHELF);
+    public static final DeferredItem<Item> PURPLE_SHELF = register(ColoredFurnitureItem.PURPLE_SHELF);
+    public static final DeferredItem<Item> RED_SHELF = register(ColoredFurnitureItem.RED_SHELF);
+    public static final DeferredItem<Item> WHITE_SHELF = register(ColoredFurnitureItem.WHITE_SHELF);
+    public static final DeferredItem<Item> YELLOW_SHELF = register(ColoredFurnitureItem.YELLOW_SHELF);
+
+    public static final DeferredItem<Item> BLACK_WALL_SHELF = register(ColoredFurnitureItem.BLACK_WALL_SHELF);
+    public static final DeferredItem<Item> BLUE_WALL_SHELF = register(ColoredFurnitureItem.BLUE_WALL_SHELF);
+    public static final DeferredItem<Item> BROWN_WALL_SHELF = register(ColoredFurnitureItem.BROWN_WALL_SHELF);
+    public static final DeferredItem<Item> CYAN_WALL_SHELF = register(ColoredFurnitureItem.CYAN_WALL_SHELF);
+    public static final DeferredItem<Item> GRAY_WALL_SHELF = register(ColoredFurnitureItem.GRAY_WALL_SHELF);
+    public static final DeferredItem<Item> GREEN_WALL_SHELF = register(ColoredFurnitureItem.GREEN_WALL_SHELF);
+    public static final DeferredItem<Item> LIGHT_BLUE_WALL_SHELF = register(ColoredFurnitureItem.LIGHT_BLUE_WALL_SHELF);
+    public static final DeferredItem<Item> LIGHT_GRAY_WALL_SHELF = register(ColoredFurnitureItem.LIGHT_GRAY_WALL_SHELF);
+    public static final DeferredItem<Item> LIME_WALL_SHELF = register(ColoredFurnitureItem.LIME_WALL_SHELF);
+    public static final DeferredItem<Item> MAGENTA_WALL_SHELF = register(ColoredFurnitureItem.MAGENTA_WALL_SHELF);
+    public static final DeferredItem<Item> ORANGE_WALL_SHELF = register(ColoredFurnitureItem.ORANGE_WALL_SHELF);
+    public static final DeferredItem<Item> PINK_WALL_SHELF = register(ColoredFurnitureItem.PINK_WALL_SHELF);
+    public static final DeferredItem<Item> PURPLE_WALL_SHELF = register(ColoredFurnitureItem.PURPLE_WALL_SHELF);
+    public static final DeferredItem<Item> RED_WALL_SHELF = register(ColoredFurnitureItem.RED_WALL_SHELF);
+    public static final DeferredItem<Item> WHITE_WALL_SHELF = register(ColoredFurnitureItem.WHITE_WALL_SHELF);
+    public static final DeferredItem<Item> YELLOW_WALL_SHELF = register(ColoredFurnitureItem.YELLOW_WALL_SHELF);
+
     private static DeferredItem<Item> register(String name, Supplier<? extends Block> block) {
         return ITEMS.register(name, () -> new BlockItem(block.get(), Nekoration.defaultItemProperties()));
     }

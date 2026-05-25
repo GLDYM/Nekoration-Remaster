@@ -3,6 +3,8 @@ package dev.polaris_light.nekoration.data.client;
 import dev.polaris_light.nekoration.Nekoration;
 import dev.polaris_light.nekoration.api.block.HorizontalConnection;
 import dev.polaris_light.nekoration.api.block.NekorationBlockStateProperties;
+import dev.polaris_light.nekoration.block.storage.CupboardBlock;
+import dev.polaris_light.nekoration.block.storage.ShelfBlock;
 import dev.polaris_light.nekoration.init.block.BlockRegistry;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -53,6 +55,9 @@ public final class NekorationBlockStateProvider extends BlockStateProvider {
         glassTable(BlockRegistry.GLASS_ROUND_TABLE.get(), "glass_round_table");
         chair(BlockRegistry.ARM_CHAIR.get(), "arm_chair", "arm_side", "arm_top");
         bench(BlockRegistry.BENCH.get());
+        cupboard(BlockRegistry.CUPBOARD.get());
+        shelf(BlockRegistry.SHELF.get());
+        wallShelf(BlockRegistry.WALL_SHELF.get());
     }
 
     private void chair(Block block, String name, String sideTexture, String topTexture) {
@@ -95,10 +100,66 @@ public final class NekorationBlockStateProvider extends BlockStateProvider {
     }
 
     private void bench(Block block) {
-        ModelFile s0 = models().getExistingFile(modLoc("block/bench_s0"));
-        ModelFile t0 = models().getExistingFile(modLoc("block/bench_t0"));
-        ModelFile t1 = models().getExistingFile(modLoc("block/bench_t1"));
-        ModelFile t2 = models().getExistingFile(modLoc("block/bench_t2"));
+        ModelFile s0 = models().getExistingFile(modLoc("block/furniture/bench_s0"));
+        ModelFile t0 = models().getExistingFile(modLoc("block/furniture/bench_t0"));
+        ModelFile t1 = models().getExistingFile(modLoc("block/furniture/bench_t1"));
+        ModelFile t2 = models().getExistingFile(modLoc("block/furniture/bench_t2"));
+
+        getVariantBuilder(block).forAllStates(state -> {
+            int y = switch (state.getValue(HorizontalDirectionalBlock.FACING)) {
+                case EAST -> 90;
+                case SOUTH -> 180;
+                case WEST -> 270;
+                default -> 0;
+            };
+            HorizontalConnection connection = state.getValue(NekorationBlockStateProperties.HORIZONTAL_CONNECTION);
+            ModelFile model = switch (connection) {
+                case S0 -> s0;
+                case D0, T0 -> t0;
+                case T1 -> t1;
+                case D1, T2 -> t2;
+            };
+            return ConfiguredModel.builder().modelFile(model).rotationY(y).build();
+        });
+    }
+
+    private void cupboard(Block block) {
+        ModelFile model = models().getExistingFile(modLoc("block/storage/cupboard"));
+        ModelFile bottomModel = models().getExistingFile(modLoc("block/storage/cupboard_bottom"));
+
+        getVariantBuilder(block).forAllStates(state -> {
+            int y = switch (state.getValue(HorizontalDirectionalBlock.FACING)) {
+                case EAST -> 90;
+                case SOUTH -> 180;
+                case WEST -> 270;
+                default -> 0;
+            };
+            ModelFile configuredModel = state.getValue(CupboardBlock.BOTTOM) ? bottomModel : model;
+            return ConfiguredModel.builder().modelFile(configuredModel).rotationY(y).build();
+        });
+    }
+
+    private void shelf(Block block) {
+        ModelFile model = models().getExistingFile(modLoc("block/storage/shelf"));
+        ModelFile bottomModel = models().getExistingFile(modLoc("block/storage/shelf_bottom"));
+
+        getVariantBuilder(block).forAllStates(state -> {
+            int y = switch (state.getValue(HorizontalDirectionalBlock.FACING)) {
+                case EAST -> 90;
+                case SOUTH -> 180;
+                case WEST -> 270;
+                default -> 0;
+            };
+            ModelFile configuredModel = state.getValue(ShelfBlock.BOTTOM) ? bottomModel : model;
+            return ConfiguredModel.builder().modelFile(configuredModel).rotationY(y).build();
+        });
+    }
+
+    private void wallShelf(Block block) {
+        ModelFile s0 = models().getExistingFile(modLoc("block/storage/wall_shelf_s0"));
+        ModelFile t0 = models().getExistingFile(modLoc("block/storage/wall_shelf_t0"));
+        ModelFile t1 = models().getExistingFile(modLoc("block/storage/wall_shelf_t1"));
+        ModelFile t2 = models().getExistingFile(modLoc("block/storage/wall_shelf_t2"));
 
         getVariantBuilder(block).forAllStates(state -> {
             int y = switch (state.getValue(HorizontalDirectionalBlock.FACING)) {

@@ -1,0 +1,964 @@
+{
+  "variants": {
+    "bottom=false,color=0,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=0,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=0,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=0,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=0,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=0,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=0,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=0,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=1,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=1,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=1,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=1,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=1,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=1,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=1,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=1,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=10,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=10,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=10,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=10,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=10,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=10,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=10,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=10,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=11,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=11,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=11,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=11,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=11,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=11,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=11,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=11,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=12,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=12,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=12,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=12,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=12,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=12,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=12,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=12,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=13,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=13,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=13,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=13,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=13,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=13,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=13,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=13,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=14,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=14,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=14,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=14,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=14,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=14,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=14,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=14,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=15,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=15,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=15,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=15,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=15,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=15,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=15,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=15,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=2,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=2,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=2,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=2,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=2,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=2,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=2,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=2,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=3,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=3,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=3,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=3,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=3,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=3,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=3,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=3,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=4,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=4,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=4,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=4,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=4,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=4,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=4,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=4,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=5,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=5,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=5,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=5,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=5,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=5,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=5,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=5,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=6,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=6,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=6,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=6,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=6,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=6,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=6,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=6,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=7,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=7,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=7,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=7,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=7,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=7,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=7,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=7,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=8,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=8,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=8,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=8,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=8,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=8,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=8,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=8,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=9,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=9,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 90
+    },
+    "bottom=false,color=9,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=9,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf"
+    },
+    "bottom=false,color=9,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=9,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 180
+    },
+    "bottom=false,color=9,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=false,color=9,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf",
+      "y": 270
+    },
+    "bottom=true,color=0,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=0,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=0,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=0,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=0,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=0,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=0,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=0,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=1,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=1,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=1,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=1,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=1,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=1,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=1,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=1,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=10,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=10,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=10,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=10,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=10,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=10,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=10,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=10,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=11,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=11,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=11,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=11,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=11,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=11,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=11,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=11,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=12,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=12,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=12,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=12,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=12,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=12,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=12,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=12,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=13,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=13,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=13,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=13,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=13,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=13,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=13,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=13,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=14,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=14,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=14,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=14,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=14,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=14,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=14,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=14,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=15,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=15,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=15,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=15,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=15,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=15,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=15,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=15,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=2,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=2,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=2,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=2,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=2,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=2,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=2,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=2,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=3,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=3,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=3,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=3,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=3,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=3,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=3,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=3,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=4,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=4,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=4,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=4,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=4,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=4,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=4,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=4,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=5,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=5,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=5,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=5,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=5,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=5,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=5,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=5,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=6,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=6,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=6,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=6,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=6,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=6,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=6,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=6,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=7,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=7,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=7,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=7,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=7,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=7,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=7,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=7,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=8,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=8,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=8,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=8,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=8,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=8,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=8,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=8,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=9,facing=east,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=9,facing=east,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 90
+    },
+    "bottom=true,color=9,facing=north,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=9,facing=north,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom"
+    },
+    "bottom=true,color=9,facing=south,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=9,facing=south,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 180
+    },
+    "bottom=true,color=9,facing=west,open=false": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    },
+    "bottom=true,color=9,facing=west,open=true": {
+      "model": "nekoration:block/storage/shelf_bottom",
+      "y": 270
+    }
+  }
+}

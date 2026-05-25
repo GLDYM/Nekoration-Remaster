@@ -98,5 +98,62 @@ public final class NekorationItemTagsProvider extends ItemTagsProvider {
                 BlockItemRegistry.WHITE_BENCH.get(),
                 BlockItemRegistry.YELLOW_BENCH.get()
             );
+        tag(NekorationItemTags.CUPBOARDS)
+            .add(
+                BlockItemRegistry.BLACK_CUPBOARD.get(),
+                BlockItemRegistry.BLUE_CUPBOARD.get(),
+                BlockItemRegistry.BROWN_CUPBOARD.get(),
+                BlockItemRegistry.CYAN_CUPBOARD.get(),
+                BlockItemRegistry.GRAY_CUPBOARD.get(),
+                BlockItemRegistry.GREEN_CUPBOARD.get(),
+                BlockItemRegistry.LIGHT_BLUE_CUPBOARD.get(),
+                BlockItemRegistry.LIGHT_GRAY_CUPBOARD.get(),
+                BlockItemRegistry.LIME_CUPBOARD.get(),
+                BlockItemRegistry.MAGENTA_CUPBOARD.get(),
+                BlockItemRegistry.ORANGE_CUPBOARD.get(),
+                BlockItemRegistry.PINK_CUPBOARD.get(),
+                BlockItemRegistry.PURPLE_CUPBOARD.get(),
+                BlockItemRegistry.RED_CUPBOARD.get(),
+                BlockItemRegistry.WHITE_CUPBOARD.get(),
+                BlockItemRegistry.YELLOW_CUPBOARD.get()
+            );
+        tag(NekorationItemTags.SHELVES)
+            .add(
+                BlockItemRegistry.BLACK_SHELF.get(),
+                BlockItemRegistry.BLUE_SHELF.get(),
+                BlockItemRegistry.BROWN_SHELF.get(),
+                BlockItemRegistry.CYAN_SHELF.get(),
+                BlockItemRegistry.GRAY_SHELF.get(),
+                BlockItemRegistry.GREEN_SHELF.get(),
+                BlockItemRegistry.LIGHT_BLUE_SHELF.get(),
+                BlockItemRegistry.LIGHT_GRAY_SHELF.get(),
+                BlockItemRegistry.LIME_SHELF.get(),
+                BlockItemRegistry.MAGENTA_SHELF.get(),
+                BlockItemRegistry.ORANGE_SHELF.get(),
+                BlockItemRegistry.PINK_SHELF.get(),
+                BlockItemRegistry.PURPLE_SHELF.get(),
+                BlockItemRegistry.RED_SHELF.get(),
+                BlockItemRegistry.WHITE_SHELF.get(),
+                BlockItemRegistry.YELLOW_SHELF.get()
+            );
+        tag(NekorationItemTags.WALL_SHELVES)
+            .add(
+                BlockItemRegistry.BLACK_WALL_SHELF.get(),
+                BlockItemRegistry.BLUE_WALL_SHELF.get(),
+                BlockItemRegistry.BROWN_WALL_SHELF.get(),
+                BlockItemRegistry.CYAN_WALL_SHELF.get(),
+                BlockItemRegistry.GRAY_WALL_SHELF.get(),
+                BlockItemRegistry.GREEN_WALL_SHELF.get(),
+                BlockItemRegistry.LIGHT_BLUE_WALL_SHELF.get(),
+                BlockItemRegistry.LIGHT_GRAY_WALL_SHELF.get(),
+                BlockItemRegistry.LIME_WALL_SHELF.get(),
+                BlockItemRegistry.MAGENTA_WALL_SHELF.get(),
+                BlockItemRegistry.ORANGE_WALL_SHELF.get(),
+                BlockItemRegistry.PINK_WALL_SHELF.get(),
+                BlockItemRegistry.PURPLE_WALL_SHELF.get(),
+                BlockItemRegistry.RED_WALL_SHELF.get(),
+                BlockItemRegistry.WHITE_WALL_SHELF.get(),
+                BlockItemRegistry.YELLOW_WALL_SHELF.get()
+            );
     }
 }
