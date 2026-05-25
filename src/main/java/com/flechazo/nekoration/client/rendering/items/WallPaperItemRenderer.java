@@ -1,0 +1,48 @@
+package com.flechazo.nekoration.client.rendering.items;
+
+import com.flechazo.nekoration.client.event.ClientModEventSubscriber;
+import com.flechazo.nekoration.client.rendering.entities.WallPaperRenderer;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.datafixers.util.Pair;
+import com.mojang.math.Axis;
+import net.minecraft.client.model.geom.EntityModelSet;
+import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.blockentity.BannerRenderer;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher;
+import net.minecraft.client.resources.model.ModelBakery;
+import net.minecraft.core.Holder;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.ItemDisplayContext;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ShieldItem;
+import net.minecraft.world.level.block.entity.BannerBlockEntity;
+import net.minecraft.world.level.block.entity.BannerPattern;
+
+import java.util.List;
+
+
+public class WallPaperItemRenderer extends BlockEntityWithoutLevelRenderer {
+    protected EntityModelSet modelSet;
+    public final ModelPart paperFull;
+
+    public WallPaperItemRenderer(BlockEntityRenderDispatcher dispatcher, EntityModelSet set) {
+        super(dispatcher, set);
+        this.modelSet = set;
+        this.paperFull = modelSet.bakeLayer(ClientModEventSubscriber.WALLPAPER).getChild("full");
+    }
+
+    @Override
+    public void renderByItem(ItemStack stack, ItemDisplayContext itemDisplayContext, PoseStack matrixStack, MultiBufferSource buffer, int combinedLight, int combinedOverlay) {
+        boolean flag = stack.getTagElement("BlockEntityTag") != null;
+        matrixStack.pushPose();
+        matrixStack.mulPose(Axis.ZP.rotationDegrees(180.0F));
+        matrixStack.mulPose(Axis.YP.rotationDegrees(180.0F));
+
+        List<Pair<Holder<BannerPattern>, DyeColor>> list = flag ? BannerBlockEntity.createPatterns(ShieldItem.getColor(stack), BannerBlockEntity.getItemPatterns(stack)) : WallPaperRenderer.getBlankPattern(DyeColor.WHITE);
+        BannerRenderer.renderPatterns(matrixStack, buffer, combinedLight, combinedOverlay, paperFull, ModelBakery.BANNER_BASE, true, list, false);
+
+        matrixStack.popPose();
+    }
+}

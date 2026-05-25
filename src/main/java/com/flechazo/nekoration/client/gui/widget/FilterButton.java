@@ -1,0 +1,83 @@
+package com.flechazo.nekoration.client.gui.widget;
+
+import com.flechazo.nekoration.Nekoration;
+import com.flechazo.nekoration.client.event.CreativeInventoryEvents;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.BufferBuilder;
+import com.mojang.blaze3d.vertex.BufferUploader;
+import com.mojang.blaze3d.vertex.DefaultVertexFormat;
+import com.mojang.blaze3d.vertex.Tesselator;
+import com.mojang.blaze3d.vertex.VertexFormat.Mode;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.renderer.GameRenderer;
+import net.minecraft.network.chat.CommonComponents;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
+
+// Creative Tab Filter, adapted from MrCrayfish's Furniture Mod...
+public class FilterButton extends Button {
+    private static final ResourceLocation TABS = new ResourceLocation(Nekoration.MODID, "textures/gui/tabs.png");
+
+    private final CreativeInventoryEvents.Filter category;
+    private final ItemStack stack;
+    private boolean toggled;
+
+    public FilterButton(int x, int y, CreativeInventoryEvents.Filter category, OnPress pressable) {
+        super(x, y, 32, 28, CommonComponents.EMPTY, pressable, DEFAULT_NARRATION);
+        this.category = category;
+        this.stack = category.getIcon();
+        this.toggled = category.isEnabled();
+    }
+
+    public CreativeInventoryEvents.Filter getCategory() {
+        return this.category;
+    }
+
+    @Override
+    public void onPress() {
+        this.toggled = !this.toggled;
+        this.category.setEnabled(this.toggled);
+        super.onPress();
+    }
+
+    @Override
+    public void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+        Minecraft mc = Minecraft.getInstance();
+        RenderSystem.setShader(GameRenderer::getPositionTexShader);
+        RenderSystem.setShaderTexture(0, TABS);
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, this.alpha);
+
+        int width = this.toggled ? 32 : 28;
+        int textureX = 28;
+        int textureY = this.toggled ? 32 : 0;
+
+        int x = this.getX();
+        int y = this.getY();
+
+        this.drawRotatedTexture(guiGraphics, x, y, textureX, textureY, width, 28);
+
+        guiGraphics.renderItem(this.stack, x + 8, y + 6);
+        guiGraphics.renderItemDecorations(mc.font, this.stack, x + 8, y + 6);
+    }
+
+    private void drawRotatedTexture(GuiGraphics guiGraphics, int x, int y, int textureX, int textureY, int width, int height) {
+        float scaleX = 0.00390625F;
+        float scaleY = 0.00390625F;
+        RenderSystem.setShader(GameRenderer::getPositionTexShader);
+
+        var pose = guiGraphics.pose();
+        BufferBuilder buffer = Tesselator.getInstance().getBuilder();
+        buffer.begin(Mode.QUADS, DefaultVertexFormat.POSITION_TEX);
+        buffer.vertex(x, y + height, 0.0).uv(((float) (textureX + height) * scaleX), ((float) (textureY) * scaleY)).endVertex();
+        buffer.vertex(x + width, y + height, 0.0).uv(((float) (textureX + height) * scaleX), ((float) (textureY + width) * scaleY)).endVertex();
+        buffer.vertex(x + width, y, 0.0).uv(((float) (textureX) * scaleX), ((float) (textureY + width) * scaleY)).endVertex();
+        buffer.vertex(x, y, 0.0).uv(((float) (textureX) * scaleX), ((float) (textureY) * scaleY)).endVertex();
+        BufferUploader.drawWithShader(buffer.end());
+    }
+
+    public void updateState() {
+        this.toggled = this.category.isEnabled();
+    }
+}

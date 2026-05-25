@@ -1,0 +1,22 @@
+{
+	"variants": {
+		"vertical_connection=s0": {
+			"model": "nekoration:block/half_timber/half_timber_p2"
+		},
+		"vertical_connection=d0": {
+			"model": "nekoration:block/half_timber/half_timber_p2_d0"
+		},
+		"vertical_connection=d1": {
+			"model": "nekoration:block/half_timber/half_timber_p2_d1"
+		},
+		"vertical_connection=t0": {
+			"model": "nekoration:block/half_timber/half_timber_p2_t0"
+		},
+		"vertical_connection=t1": {
+			"model": "nekoration:block/half_timber/half_timber_p2_t1"
+		},
+		"vertical_connection=t2": {
+			"model": "nekoration:block/half_timber/half_timber_p2_t2"
+		}
+	}
+}

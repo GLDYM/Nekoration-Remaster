@@ -1,0 +1,50 @@
+package com.flechazo.nekoration.items;
+
+import com.flechazo.nekoration.Nekoration;
+import com.flechazo.nekoration.client.rendering.items.WallPaperItemRenderer;
+import com.flechazo.nekoration.items.TweakItem.Aspect;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.world.item.Item;
+import net.minecraftforge.client.extensions.common.IClientItemExtensions;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Consumer;
+
+public class ModItems {
+    // For Block Items, see CommonModEventSubscriber...
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Nekoration.MODID);
+
+    public static final RegistryObject<Item> PAW = ITEMS.register("paw", () -> new Item(new Item.Properties()));
+    // Meow ~
+    public static final RegistryObject<Item> PAW_UP = ITEMS.register("paw_up", () -> new TweakItem(new Item.Properties(), Aspect.PosY, 1));
+    public static final RegistryObject<Item> PAW_DOWN = ITEMS.register("paw_down", () -> new TweakItem(new Item.Properties(), Aspect.PosY, -1));
+    public static final RegistryObject<Item> PAW_LEFT = ITEMS.register("paw_left", () -> new TweakItem(new Item.Properties(), Aspect.PosX, 1));
+    public static final RegistryObject<Item> PAW_RIGHT = ITEMS.register("paw_right", () -> new TweakItem(new Item.Properties(), Aspect.PosX, -1));
+    public static final RegistryObject<Item> PAW_NEAR = ITEMS.register("paw_near", () -> new TweakItem(new Item.Properties(), Aspect.PosZ, -1));
+    public static final RegistryObject<Item> PAW_FAR = ITEMS.register("paw_far", () -> new TweakItem(new Item.Properties(), Aspect.PosZ, 1));
+    public static final RegistryObject<Item> PAW_15 = ITEMS.register("paw_15", () -> new TweakItem(new Item.Properties(), Aspect.Rotation, 1));
+    public static final RegistryObject<Item> PAW_90 = ITEMS.register("paw_90", () -> new TweakItem(new Item.Properties(), Aspect.Rotation, 6));
+
+    public static final RegistryObject<Item> ARROW_HINT = ITEMS.register("arrow_hint", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PALETTE = ITEMS.register("palette", () -> new PaletteItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> CAMERA = ITEMS.register("camera", () -> new CameraItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> PAINTING = ITEMS.register("painting", () -> new PaintingItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> WALLPAPER = ITEMS.register("wallpaper", () -> new WallPaperItem(new Item.Properties()) {
+        @Override
+        public void initializeClient(Consumer<IClientItemExtensions> consumer) {
+            consumer.accept(new IClientItemExtensions() {
+                @Override
+                public BlockEntityWithoutLevelRenderer getCustomRenderer() {
+                    return new WallPaperItemRenderer(null, Minecraft.getInstance().getEntityModels());
+                }
+            });
+        }
+    });
+}

@@ -1,0 +1,23 @@
+{
+    "type": "nekoration:neko_crafting_shaped",
+    "pattern": [
+        "000",
+        "###",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:gold_block"
+        },
+        "0": {
+            "item": "minecraft:honeycomb"
+        }
+    },
+    "result": {
+        "item": "nekoration:candle_holder_gold",
+        "nbt": {
+            "color": 14
+        },
+        "count": 3
+    }
+}

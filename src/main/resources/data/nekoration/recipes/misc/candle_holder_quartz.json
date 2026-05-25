@@ -1,0 +1,23 @@
+{
+    "type": "nekoration:neko_crafting_shaped",
+    "pattern": [
+        "000",
+        "###",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:quartz_block"
+        },
+        "0": {
+            "item": "minecraft:honeycomb"
+        }
+    },
+    "result": {
+        "item": "nekoration:candle_holder_quartz",
+        "nbt": {
+            "color": 14
+        },
+        "count": 3
+    }
+}
