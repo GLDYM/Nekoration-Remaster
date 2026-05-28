@@ -1,5 +1,7 @@
 # Nekoration
 
+See https://github.com/DevBobcorn/Nekoration for V2.
+
 #### A Decoration Mod for Minecraft
 
 ### Introduction
